@@ -1,13 +1,154 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  padding: 0;
+  background-image: url('../public/IMG_0943.jpg');
+  background-attachment: fixed;
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+img{
+  width: 100%;
+}
+
+.card{
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.search-bar{
+  opacity: 1.0;
+  background-color: white;
+  height: 20px;
+  width: 300px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.search-bar-container h1{
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.search-bar-container{
+  background-color: white;
+  opacity: 0.5;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  position: sticky;
+  top: 0;
+}
+
+.detail-page{
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.detail-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link, .link:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a, a:visited{
+  color: black;
+}
+
+.btn-container{
+  width: 100%;
+  display: flex;
+  margin: 5px;
+  margin-top: 0;
+  padding: 10px;
+  justify-content: start;
+  background-color: white;
+  opacity: 0.5;
+  position: sticky;
+  top: 0;
+  border-radius: 5px;
+}
+
+.btn, .btn:visited{
+  background-color: black;
+  padding: 7px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+}
+
+ol li{
+  margin-bottom: 7px;
+}
+
+.readyTime{
+  color: grey;
+}
+
+.recipe-title{
+  font-weight: bold;
+}
+
+footer{
+  background-color: white;
+  padding: 20px;
+  opacity: 0.5;
+  border-radius: 5px;
+  /*position: relative;
+  bottom: 0;
+  left: 0;*/
+}
+
+.noRecipes p{
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  opacity: 0.5;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .recipe-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 100%;
+  }
+  .card{
+    width: 250px;
+    margin: 20px;
+    height: 250px;
+  }
+
+  .detail-page {
+    max-width: 800px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card{
+    width: 300px;
+    height: 300px;
+  }
+
+  .detail-page {
+    max-width: 900px;
+  }
 }
