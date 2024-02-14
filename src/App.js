@@ -1,12 +1,11 @@
 import Recipes from "./components/Recipes";
 import SearchBar from "./components/SearchBar";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { load } from "./store/slices/recipesSlice";
 import Footer from "./components/Footer";
 
 function App() {
-  const search = useSelector((state) => state.search.value)
   const dispatch = useDispatch()
   useEffect(() => {
     fetch('https://api.spoonacular.com/recipes/complexSearch?diet=vegetarian&addRecipeInformation=true', {
@@ -26,7 +25,7 @@ function App() {
   return (
     <>
       <SearchBar />
-      <Recipes search={search}/>
+      <Recipes />
       <Footer />
     </>
   );

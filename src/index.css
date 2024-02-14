@@ -29,6 +29,7 @@ img{
   border: 2px solid black;
   border-radius: 5px;
   font-size: 20px;
+  margin-right: 10px;
 }
 
 .search-bar-container h1{
@@ -45,6 +46,10 @@ img{
   margin-bottom: 30px;
   position: sticky;
   top: 0;
+}
+
+.search-bar-container form{
+  display: inline-block;
 }
 
 .detail-page{
@@ -89,6 +94,10 @@ a, a:visited{
   text-decoration: none;
   color: white;
   border-radius: 5px;
+}
+
+.search-bar-container .btn{
+  height: 30px;
 }
 
 ol li{
