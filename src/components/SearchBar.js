@@ -6,7 +6,7 @@ export default function SearchBar(){
     const dispatch = useDispatch();
     const [search, setSearch] = useState('')
     function recipeSearch(src){
-        fetch(`https://api.spoonacular.com/recipes/complexSearch?diet=vegetarian&addRecipeInformation=true&query=${src}`, {
+        fetch(`https://api.spoonacular.com/recipes/complexSearch?diet=vegetarian&addRecipeInformation=true&addRecipeInstructions=true&query=${src}`, {
             method: 'GET',
             headers:{
                 'x-api-key': process.env.REACT_APP_API_KEY
