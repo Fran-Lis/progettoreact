@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 function App() {
   const dispatch = useDispatch()
   useEffect(() => {
-    fetch('https://api.spoonacular.com/recipes/complexSearch?diet=vegetarian&addRecipeInformation=true', {
+    fetch('https://api.spoonacular.com/recipes/complexSearch?diet=vegetarian&addRecipeInformation=true&addRecipeInstructions=true', {
       method: 'GET',
       headers:{
         'x-api-key': process.env.REACT_APP_API_KEY
